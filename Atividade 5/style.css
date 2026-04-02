@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto {
+    padding: 100px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+@media (max-width: 420px) {
+    .box {
+        background-color: gray;
+        .texto::before{
+            content: "Cinza";
+        }
+    }
+
+}
+
+@media (min-width: 421px) and (max-width: 768px) {
+    .box {
+        background-color: orange;
+        .texto::before{
+            content: "Laranja";
+        }
+        
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .box {
+        background-color: blue;
+        .texto::before{
+            content: "Azul";
+        }
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .box {
+        background-color: purple;
+        .texto::before{
+            content: "Roxo";
+        }
+    }
+
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+    .box {
+        background-color: red;
+        .texto::before{
+            content: "Vermelho";
+        }
+    }
+}
+@media (min-width: 1921px) {
+    .box {
+        background-color: green;
+        .texto::before{
+            content: "Verde";
+        }
+    }
+
+}
